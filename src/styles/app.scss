@@ -1,3 +1,100 @@
-h1{
-    color:green;
+// ? Reset
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+    font-size: 62.5%;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+    height: inherit;
+}
+
+//? Header
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    font-size: 1.6rem;
+    // background-color: yellow;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo__link{
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.navbar{
+    flex: 3;
+}
+
+.navbar__links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__link{
+    text-decoration: none;
+}
+
+.cart{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cart__img{
+    cursor: pointer;
 }
