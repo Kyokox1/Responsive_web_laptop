@@ -1,37 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 
 import logo from "../../public/images/logo.svg";
 import cart from "../../public/images/cart.svg";
 
 import "../styles/app.scss";
+import "../styles/tablet.scss";
+import "../styles/mobile.scss";
 
 function App() {
+	const [activeAsideNav, setActiveAsideNav] = useState(false);
 	return (
 		<>
 			<header>
 				<div className="logo">
-					<a href="/" className="logo__link">
+					<a href="#" className="logo__link">
 						<img src={logo} alt="logo" />
 						<p>Three Dots</p>
 					</a>
 				</div>
-				<nav className="navbar">
-					<ul className="navbar__links">
+				<nav className={`navbar ${activeAsideNav && "navbar-is-active"}`}>
+					<ul
+						className={`navbar__links ${
+							activeAsideNav && "navbar-is-active"
+						} `}
+					>
 						<li>
 							{" "}
-							<a href="/" className="navbar__link">
+							<a
+								href="#"
+								className={`navbar__link ${
+									activeAsideNav && "navbar__link-is-active"
+								}`}
+							>
 								Specs{" "}
 							</a>{" "}
 						</li>
 						<li>
 							{" "}
-							<a href="/" className="navbar__link">
+							<a
+								href="#"
+								className={`navbar__link ${
+									activeAsideNav && "navbar__link-is-active"
+								}`}
+							>
 								Products{" "}
 							</a>{" "}
 						</li>
 						<li>
 							{" "}
-							<a href="/" className="navbar__link">
+							<a
+								href="#"
+								className={`navbar__link ${
+									activeAsideNav && "navbar__link-is-active"
+								}`}
+							>
 								Contact{" "}
 							</a>{" "}
 						</li>
@@ -76,6 +98,20 @@ function App() {
 				<img src="./images/dot-full.svg" alt="controls" />
 				<img src="./images/arrow-right.svg" alt="controls" />
 			</div>
+
+			{/* Hambrguer-button */}
+
+			<button
+				onClick={() => setActiveAsideNav(!activeAsideNav)}
+				className={`hamburger hamburger--vortex ${
+					activeAsideNav && "is-active"
+				}`}
+				type="button"
+			>
+				<span className="hamburger-box">
+					<span className="hamburger-inner"></span>
+				</span>
+			</button>
 
 			{/* background */}
 			<img

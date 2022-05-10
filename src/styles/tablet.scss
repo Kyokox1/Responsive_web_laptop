@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+	.controls {
+		right: 12vw;
+		bottom: 8vh;
+	}
+}
+
+@media (max-width: 660px) {
+	html,
+	body {
+		height: auto;
+	}
+	// ?Header
+	header {
+		padding-top: 5vh;
+	}
+
+	.logo {
+		flex: 2;
+	}
+
+	.navbar__links {
+		padding: 0;
+	}
+
+	// ?Main
+	.card {
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 70px;
+	}
+
+	// ?controls
+
+	.controls {
+		bottom: -50%;
+		right: calc(50% - 95px);
+	}
+}
+
+@media (max-width: 540px) {
+	.controls {
+		bottom: -35%;
+	}
+}
