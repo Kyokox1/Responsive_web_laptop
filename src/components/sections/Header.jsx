@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { HamburgerButton } from "../items/HamburgerButton";
+
 import logo from "../../../public/images/logo.svg";
 import cart from "../../../public/images/cart.svg";
 
@@ -63,17 +65,10 @@ export const Header = () => {
 
 			{/* Hambrguer-button-(Mobile) */}
 
-			<button
-				onClick={() => setActiveAsideNav(!activeAsideNav)}
-				className={`hamburger hamburger--vortex ${
-					activeAsideNav && "is-active"
-				}`}
-				type="button"
-			>
-				<span className="hamburger-box">
-					<span className="hamburger-inner"></span>
-				</span>
-			</button>
+			<HamburgerButton
+				activeAsideNav={activeAsideNav}
+				setActiveAsideNav={setActiveAsideNav}
+			/>
 		</>
 	);
 };
