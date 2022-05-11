@@ -200,6 +200,32 @@ header {
 	position: absolute;
 	bottom: 5vh;
 	right: 17vw;
+	font-size: 2.2rem;
+}
+
+.controls__arrow {
+	cursor: pointer;
+}
+
+.controls__arrow:hover {
+	color: #d87093;
+}
+
+.controls__btn {
+	border: 2px black solid;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	cursor: pointer;
+}
+
+.controls__btn-active {
+	background-color: wheat;
+}
+
+.controls__btn:hover {
+	background-color: wheat;
 }
 
 // ? background-eclipses

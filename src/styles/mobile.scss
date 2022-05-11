@@ -7,7 +7,7 @@
 
 	//? Header
 	.logo {
-		z-index: 10;
+		z-index: 8;
 	}
 	.logo__link {
 		justify-content: flex-start;
@@ -126,5 +126,15 @@
 	// ?controls
 	.controls {
 		bottom: -35vh;
+	}
+
+	// ?Background
+	.small__eclipse {
+		bottom: -47vh;
+	}
+
+	.mid__eclipse {
+		right: 30vw;
+		bottom: 0;
 	}
 }

@@ -3,6 +3,22 @@
 		right: 12vw;
 		bottom: 8vh;
 	}
+	//? background
+
+	.small__eclipse {
+		right: 70vw;
+		height: 20vh;
+	}
+
+	.mid__eclipse {
+		bottom: 20vh;
+		right: 40vw;
+		height: 40vh;
+	}
+
+	.big__eclipse {
+		height: 60vh;
+	}
 }
 
 @media (max-width: 660px) {
@@ -35,6 +51,16 @@
 	.controls {
 		bottom: -50%;
 		right: calc(50% - 95px);
+	}
+
+	// ?Background
+
+	.mid__eclipse {
+		bottom: -10vh;
+	}
+
+	.small__eclipse {
+		bottom: -40vh;
 	}
 }
 
